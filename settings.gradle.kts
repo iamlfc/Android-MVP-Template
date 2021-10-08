@@ -1,1 +1,1 @@
-rootProject.name = "MVP Template"
+rootProject.name = "LFCTemplate"

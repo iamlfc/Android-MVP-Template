@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.neo.mvp.template</id>
-    <name>MVP Template</name>
+    <name>LFCTemplate</name>
     <description>使用该模板创建基于MVP的Activity,layout,presenter,contract等文件</description>
     <vendor>Neo</vendor>
 
@@ -12,16 +12,17 @@
     <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.neo.mvp.template.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.neo.mvp.template.services.MyProjectService"/>
+        <applicationService
+            serviceImplementation="com.neo.mvp.template.services.MyApplicationService" />
+        <projectService serviceImplementation="com.neo.mvp.template.services.MyProjectService" />
     </extensions>
 
     <applicationListeners>
         <listener class="com.neo.mvp.template.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
+            topic="com.intellij.openapi.project.ProjectManagerListener" />
     </applicationListeners>
 
     <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
-        <wizardTemplateProvider implementation="other.mvp.MVPTemplateProviderImpl"/>
+        <wizardTemplateProvider implementation="other.mvp.MVPTemplateProviderImpl" />
     </extensions>
 </idea-plugin>

@@ -17,8 +17,7 @@ fun mvpActivityXml(packageName: String,
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="19dp"
-    tools:context="${packageName}.v.${activityClass}Activity"
+    tools:context="${packageName}.${activityClass}"
     >
     
 </androidx.constraintlayout.widget.ConstraintLayout>   

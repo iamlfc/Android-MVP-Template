@@ -53,7 +53,7 @@
       <rect fill="#000" id="canvas_background" height="50" width="50" y="15" x="15"/>
     </g>
     <g>
-      <text font-style="normal" font-weight="bold" stroke="#fff" transform="matrix(1.041287484452866,0,0,1.067377359921416,-14.740116586852588,0.7883861565320519) " xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="24" id="svg_1" y="35" x="32" fill-opacity="null" stroke-opacity="null" fill="#fff">MVP</text>
+      <text font-style="normal" font-weight="bold" stroke="#fff" transform="matrix(1.041287484452866,0,0,1.067377359921416,-14.740116586852588,0.7883861565320519) " xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="24" id="svg_1" y="35" x="32" fill-opacity="null" stroke-opacity="null" fill="#fff">LFC</text>
       <rect fill="#fff" id="canvas_background" height="4" width="24" y="50" x="18"/>
     </g>
   </g>

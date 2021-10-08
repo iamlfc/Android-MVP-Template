@@ -15,27 +15,32 @@ import com.android.tools.idea.wizard.template.impl.activities.common.MIN_API
 val mvpActivityTemplate
     get() = template {
         revision = 1
-        name = "MVP Activity"
-        description = "适用于MVP框架的Activity"
+        name = "MyActivity"
+        description = "适用于旧框架的Activity"
         minApi = MIN_API
         minBuildApi = MIN_API
 
         category = Category.Other
         formFactor = FormFactor.Mobile
-        screens = listOf(WizardUiContext.ActivityGallery, WizardUiContext.MenuEntry, WizardUiContext.NewProject, WizardUiContext.NewModule)
+        screens = listOf(
+            WizardUiContext.ActivityGallery,
+            WizardUiContext.MenuEntry,
+            WizardUiContext.NewProject,
+            WizardUiContext.NewModule
+        )
 
         lateinit var layoutName: StringParameter
 
         val activityClass = stringParameter {
             name = "Activity Name"
-            default = "Main"
+            default = "LFCActivity"
             help = "只输入名字，不要包含Activity"
             constraints = listOf(Constraint.NONEMPTY)
         }
 
         layoutName = stringParameter {
             name = "Layout Name"
-            default = "activity_main"
+            default = "activity_lfc"
             help = "请输入布局的名字"
             constraints = listOf(Constraint.LAYOUT, Constraint.UNIQUE, Constraint.NONEMPTY)
             suggest = { activityToLayout(activityClass.value.toLowerCase()) }
@@ -54,7 +59,8 @@ val mvpActivityTemplate
                 data as ModuleTemplateData,
                 activityClass.value,
                 layoutName.value,
-                packageName.value)
+                packageName.value
+            )
         }
     }
 
