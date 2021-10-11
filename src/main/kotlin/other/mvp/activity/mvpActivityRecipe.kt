@@ -24,7 +24,7 @@ fun RecipeExecutor.mvpActivityRecipe(
 
     val mvpActivity = mvpActivityKt(packageName, activityClass, layoutName, packageName)
     // 保存Activity
-    save(mvpActivity, srcOut.resolve("${activityClass}Activity.${ktOrJavaExt}"))
+    save(mvpActivity, srcOut.resolve("${activityClass}.${ktOrJavaExt}"))
     // 保存xml
     save(mvpActivityXml(packageName, activityClass), resOut.resolve("layout/${layoutName}.xml"))
 }

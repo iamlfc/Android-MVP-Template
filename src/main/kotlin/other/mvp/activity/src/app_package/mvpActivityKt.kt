@@ -8,16 +8,18 @@ package other.mvp.activity.src.app_package
  *  @Description  mvpActivityKt
  */
 fun mvpActivityKt(
-    applicationPackage: String?,
+    applicationPackage: String? = "com.mdchina.minanfawu",
     activityClass: String,
     layoutName: String,
     packageName: String
 ) = """
 package $packageName
-import  ${applicationPackage}.R
+//import  ${applicationPackage}.R
 import android.content.Context
 import android.content.Intent
+import com.mdchina.minanfawu.R
 import android.os.Bundle
+import com.mdchina.minanfawu.base.BaseA
 
 
 class ${activityClass} : BaseA ()  {
